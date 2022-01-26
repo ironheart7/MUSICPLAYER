@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flash"
+    tools:context=".MusicControls2">
+
+    <ImageView
+        android:id="@+id/IV"
+        android:layout_width="match_parent"
+        android:layout_height="409dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/musiccd" />
+
+    <TextView
+        android:id="@+id/songtitleTV"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:maxLines="1"
+        android:layout_below="@+id/IV"
+        android:text="TextView"
+        android:textColor="@color/White"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/artistTV"
+        android:layout_width="277dp"
+        android:layout_height="41dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/songtitleTV"
+        android:text="TextView"
+        android:maxLines="1"
+        android:textColor="@color/White"
+        android:textSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/seekBarSB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/artistTV" />
+
+    <TextView
+        android:id="@+id/currentdurationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/seekBarSB"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/White"
+        tools:text="00:00" />
+
+    <TextView
+        android:id="@+id/totaldurationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/seekBarSB"
+        android:textColor="@color/White"
+        tools:text="00:00" />
+
+    <ImageButton
+        android:id="@+id/play_pauseIB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/redoval"
+        android:src="@drawable/play_white" />
+
+    <ImageButton
+        android:id="@+id/nextbtnB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/play_pauseIB"
+        android:layout_toEndOf="@+id/play_pauseIB"
+        android:background="@drawable/white_next" />
+
+    <ImageButton
+        android:id="@+id/previousbtnB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/play_pauseIB"
+        android:layout_toStartOf="@+id/play_pauseIB"
+        android:background="@drawable/white_previous" />
+
+    <CheckBox
+        android:id="@+id/setloop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/nextbtnB"
+        android:layout_marginEnd="13dp"
+        android:buttonTint="@color/deepgreen"
+        android:text="Loop"
+        android:textColor="@color/White" />
+
+    <CheckBox
+        android:id="@+id/autochange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/previousbtnB"
+        android:layout_marginStart="22dp"
+        android:buttonTint="@color/deepgreen"
+        android:text="Auto"
+        android:textColor="@color/White" />
+
+</RelativeLayout>

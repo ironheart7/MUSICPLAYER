@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/flash"
+    android:layout_height="match_parent"
+    tools:context=".Name">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/White"
+            android:textColorHighlight="@color/White"
+            android:textColorHint="@color/White"
+            android:textColorLink="@color/White" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/START"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ovalbutton"
+        android:textColor="@color/White"
+        android:text="LET's Start"/>
+
+
+    android:thicknessRatio="1.9" />
+
+</RelativeLayout>
